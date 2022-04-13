@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype</title>
+	<link rel="stylesheet" href="css/classList.css">
+</head>
+
+<body>
+	<section class="header-mobile">
+		<h1 class="space__text">
+			Пространство для поиска и организации бартеров, взаимозачетов и натурального обмена.
+		</h1>
+	</section>
+	<header class="header">
+		<nav class="header__nav">
+			<a href="#" class="header__nav-link header__nav-link_active btn">
+				Главная
+			</a>
+			<a href="#" class="header__nav-link btn">
+				О сервисе
+			</a>
+			<a href="#" class="header__nav-link btn">
+				Предложения
+			</a>
+			<a href="#" class="header__nav-link btn">
+				Взаимодействия
+			</a>
+			<a href="#" class="header__nav-link btn">
+				Подборки
+			</a>
+			<a href="#" class="header__nav-link btn">
+				Запросы
+			</a>
+			<a href="#" class="header__nav-link btn">
+				Профайл
+			</a>
+		</nav>
+	</header>
+	<section class="space">
+		<h1 class="space__text">
+			Пространство для поиска и организации бартеров, взаимозачетов и натурального обмена.
+		</h1>
+	</section>
+	<div class="main-flex">
+		<div class="main-flex__left">
+			<section class="filters">
+				<div class="filters-main">
+					<div class="filters__item">
+						<div class="filters__item-title">
+							Варианты Взаимодействия
+						</div>
+						<div class="filters__item-buttons">
+							<a href="#" class="filters__item-button filters__item-button_blue btn">
+								Товар - Товар
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_blue">
+								Товар - Услуга
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_blue">
+								Товар - Актив
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_blue">
+								Услуга - Услуга
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_blue">
+								Актив - Услуга
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_blue">
+								Актив - Актив
+							</a>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">
+							Состав предложения
+						</div>
+						<div class="filters__item-buttons">
+							<a href="#" class="filters__item-button btn filters__item-button_purple">
+								Предлагаю к обмену
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_purple">
+								Получить в замен
+							</a>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title filters__item-title_3">
+							От кого предложение
+						</div>
+						<div class="filters__item-buttons">
+							<a href="#" class="filters__item-button btn filters__item-button_darkblue">
+								Компаниям
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_darkblue">
+								Частное лицо
+							</a>
+						</div>
+						<div class="filters__item-title filters__item-title_margin0 filters__item-title_3">
+							С кем хочу взаимодействовать
+						</div>
+						<div class="filters__item-buttons">
+							<a href="#" class="filters__item-button btn filters__item-button_darkblue">
+								Компаниям
+							</a>
+							<a href="#" class="filters__item-button btn filters__item-button_darkblue">
+								Частное лицо
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="filters-footer">
+					По умолчанию активны все фильтры, для сокращения выборки нужно Выключить фильтр.
+				</div>
+			</section>
+			<section class="location">
+				<form action="#" class="location__form">
+					<div class="location__form-title">
+						Локация Взаимодействия
+					</div>
+					<div class="location__form-input">
+						<div class="location__form-checkbox">
+							<input type="checkbox" name="namecheckbox_1">
+							<span class="check__box"></span>
+							Моя локация
+						</div>
+						<div class="location__form-checkbox location__form-checkbox__margin0">
+							<input type="checkbox" name="namecheckbox_1">
+							<span class="check__box"></span>
+							Указать:
+						</div>
+						<div class="location__form-input-text-wrapper">
+							<div class="location__form-input-text">
+								<input type="text" name="region" placeholder="Регион">
+							</div>
+							<div class="location__form-input-text">
+								<input type="text" name="city" placeholder="Город">
+							</div>
+							<div class="location__form-input-text">
+								<input type="text" name="district" placeholder="Район">
+							</div>
+							<div class="location__form-input-text_big">
+								<input type="text" name="stops" placeholder="Ближайшие остановки общ. транспорта">
+							</div>
+						</div>
+					</div>
+					<div class="location__form-search">
+						<input type="search" placeholder="Поле ввода текста для Запроса">
+						<button type="submit">
+							ПОИСК
+						</button>
+					</div>
+				</form>
+			</section>
+			<section class="exchange">
+				<div class="exchange__top">
+					<div class="exchange__main">
+						<div class="exchange__main-left">
+							<div class="exchange__main-left-top">
+								<div class="exchange__main-left-top-purple">
+									Предлагаю к обмену:
+								</div>
+								<div class="exchange__main-left-top-blue">
+									Товар
+								</div>
+							</div>
+							<div class="exchange__main-left-main">
+								<div class="exchange__main-left-main-text">
+									Вот такую приколюху...
+								</div>
+								<img src="https://via.placeholder.com/150x100/#F2F2F2
+								C/O https://placeholder.com/" alt="">
+							</div>
+							<div class="exchange__main-left-bottom">
+								Рассмотрю предложения: да
+							</div>
+						</div>
+						<div class="exchange__main-right">
+							<div class="exchange__main-right-top">
+								<div class="exchange__main-right-top-purple">
+									Получить в замен:
+								</div>
+								<div class="exchange__main-right-top-blue">
+									Товар
+								</div>
+								<div class="exchange__main-right-top-blue">
+									Услугу
+								</div>
+								<div class="exchange__main-right-top-blue">
+									Актив
+								</div>
+							</div>
+							<div class="exchange__main-right-main">
+								<div class="exchange__main-right-main-text">
+									На такую вот штуку или
+									вот такое будет круто
+									получить
+								</div>
+								<img src="https://via.placeholder.com/150x100/#F2F2F2
+								C/O https://placeholder.com/" alt="">
+							</div>
+							<div class="exchange__main-right-bottom">
+								Рассмотрю предложения: нет
+							</div>
+						</div>
+						<div class="exchange__main-footer">
+							<div class="exchange__main-footer-top">
+								<div class="exchange__main-footer-top-left">
+									<div>
+										От
+										<div>
+											Частного лица
+										</div>
+									</div>
+									<div>
+										Для
+										<div>
+											Частных лиц
+										</div>
+										<div>
+											Компаний
+										</div>
+									</div>
+								</div>
+								<div class="exchange__main-footer-top-right">
+									<div>
+										Локация: Город || <span class="red">Любой</span>
+									</div>
+								</div>
+							</div>
+							<div class="exchange__main-footer-bottom">
+								<a href="#" class="exchange__main-footer-bottom-btn btn">
+									ПРОСМОТР ПРЕДЛОЖЕНИЯ
+								</a>
+								<a href="#" class="exchange__main-footer-bottom-btn btn">
+									ЗАПОМНИТЬ
+								</a>
+								<a href="#" class="exchange__main-footer-bottom-btn btn">
+									ПРОЯВИТЬ ИНТЕРЕС
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="exchange__sidebar"></div>
+				</div>
+				<div class="exchange__bottom">
+					<div class="exchange__main">
+						<div class="exchange__main-left">
+							<div class="exchange__main-left-top">
+								<div class="exchange__main-left-top-purple">
+									Предлагаю к обмену:
+								</div>
+								<div class="exchange__main-left-top-blue">
+									Товар
+								</div>
+							</div>
+							<div class="exchange__main-left-main">
+								<div class="exchange__main-left-main-text">
+									Вот такую приколюху...
+								</div>
+								<img src="https://via.placeholder.com/150x100/#F2F2F2
+								C/O https://placeholder.com/" alt="">
+							</div>
+							<div class="exchange__main-left-bottom">
+								Рассмотрю предложения: да
+							</div>
+						</div>
+						<div class="exchange__main-right">
+							<div class="exchange__main-right-top">
+								<div class="exchange__main-right-top-purple">
+									Получить в замен:
+								</div>
+								<div class="exchange__main-right-top-blue">
+									Товар
+								</div>
+								<div class="exchange__main-right-top-blue">
+									Услугу
+								</div>
+								<div class="exchange__main-right-top-blue">
+									Актив
+								</div>
+							</div>
+							<div class="exchange__main-right-main">
+								<div class="exchange__main-right-main-text">
+									На такую вот штуку или
+									вот такое будет круто
+									получить
+								</div>
+								<img src="https://via.placeholder.com/150x10
+								0/#F2F2F2
+								C/O https://placeholder.com/" alt="">
+							</div>
+							<div class="exchange__main-right-bottom">
+								Рассмотрю предложения: нет
+							</div>
+						</div>
+						<div class="exchange__main-footer">
+							<div class="exchange__main-footer-top">
+								<div class="exchange__main-footer-top-left">
+									<div>
+										От
+										<div>
+											Частного лица
+										</div>
+									</div>
+									<div>
+										Для
+										<div>
+											Частных лиц
+										</div>
+										<div>
+											Компаний
+										</div>
+									</div>
+								</div>
+								<div class="exchange__main-footer-top-right">
+									<div>
+										Локация: <span class="italic">Город</span> || <span class="red">Любой</span>
+									</div>
+								</div>
+							</div>
+							<div class="exchange__main-footer-bottom-btn-wrapper">
+								<a href="#" class="exchange__main-footer-bottom-btn btn-orange btn">
+									АВТОРИЗУЙТЕСЬ ДЛЯ ДЕЙСТВИЙ
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="exchange__sidebar"></div>
+				</div>
+			</section>
+		</div>
+		<div class="main-flex__sidebar"></div>
+	</div>
+</body>
+
+</html>

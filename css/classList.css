@@ -1,0 +1,452 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* Подключение шрифта */
+@font-face {
+	font-family: 'Robotolight';
+	src: url('../fonts/roboto-light.woff2'),
+		url('../fonts/roboto-light.woff');	
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+/* Общие стили */
+body {
+	font-family: 'RobotoLight', sans-serif;
+}
+
+a {
+	transition: 0.3s ease all;
+}
+
+.btn {
+	display: inline-block;
+	line-height: 34px;
+    width: 14%;
+	text-align: center;
+	border-radius: 5px;
+	color: #000;
+}
+
+
+/* Шапка */
+.header-mobile {
+	display: none;
+}
+.header {
+	padding: 32px 0;
+}
+.header__nav {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	width: 75%;
+}
+.header__nav-link {
+	border: 2px solid #8EB4E3;
+	font-weight: 500;
+	width: 260px;
+	margin-right: 15px;
+}
+
+.header__nav-link:hover {
+	background: #B4DE86;
+}
+.header__nav-link_active {
+	background: #B4DE86;
+}
+
+/* Пространство для поиска и организации бартеров, взаимозачетов и натурального обмена  */
+.space {
+	margin: 12px auto;
+	width: 72%;
+}
+.space__text {
+	font-weight: 700;
+	font-size: 23px;
+    text-align: center;
+}
+
+/* Main-flex (отделение главной части от сайдбара) */
+
+.main-flex {
+	display: flex;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.main-flex__left {
+	margin-left: 53px;
+}
+
+
+.main-flex__sidebar {
+	width: 25%;
+	height: 100vh;
+}
+
+/* Фильтры */
+.filters {
+	margin-top: 32px;
+}
+.filters-main {
+	display: flex;
+	padding: 0 15px 0 15px;
+}
+
+.filters__item {
+	margin-right: 5px;
+}
+.filters__item:first-child {
+	width: 45%;
+}
+
+.filters__item:last-child {
+	width: 30%;
+}
+
+.filters__item-title {
+	margin-bottom: 15px;
+	font-size: 18px;
+    text-align: center;
+	
+}
+.filters__item-title_3 {
+	width: 265px;
+}
+
+.filters__item-title_margin0 {
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+.filters__item-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 10px;
+}
+.filters__item-button {
+	width: 30%;
+	margin-bottom: 25px;
+	margin-right: 10px;
+}
+
+.filters__item-button.filters__item-button_purple {
+	width: 100%;
+}
+.filters__item-button_blue {
+	background: #B7DEE8;
+}
+.filters__item-button_purple {
+	background: #CCC1DA;
+}
+.filters__item-button_darkblue {
+	background: #88ACD9;
+	width: 40%;
+}
+.filters__item-button_darkblue {
+	margin-bottom: 0;
+}
+.filters-footer {
+	text-align: center;
+	margin-top: -5px;
+	font-size: 17px;
+}
+
+/* Локация взаимодействия */
+
+.location {
+	padding-top: 20px;
+}
+.location__form {
+	text-align: center;
+	padding-left: 55px;
+}
+.location__form-title {
+	font-size: 15px;
+}
+
+.location__form-input {
+	display: flex;
+	margin-top: 15px;
+}
+
+input[type='text'] {
+	line-height: 30px;
+	background: #DBEEF4;
+	text-align: center;
+}
+.location__form-checkbox {
+	margin-right: 95px;
+}
+
+.location__form-checkbox__margin0 {
+	margin-right: 0;
+	margin-right: 30px;
+}
+
+input[type='checkbox'] {
+	position: absolute;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.check__box {
+	margin-top: -0.5em;;
+	margin-left: -2.2em;
+	position: absolute;
+	width: 1.8em;
+	height: 1.8em;
+	background-color: #F2F2F2;
+	border: 2px solid #7F7F7F;
+}
+.location__form-input-text-wrapper {
+	display: flex;
+	margin-top: -5px;
+}
+.location__form-input-text input {
+	width: 100px;
+	margin-right: 10px;
+	border: 2px solid #C7C7C7;
+}
+.location__form-input-text_big input{
+	width: 300px;
+	border: 2px solid #C7C7C7;
+}
+.location__form-search {
+	margin-top: 25px;
+	display: flex;
+	margin-left: -20px;
+}
+
+.location__form-search input {
+	display: block;
+	width: 71%;
+	padding-left: 5px;
+	background: #F0F0F0;
+	line-height: 30px;
+	border: 2px solid #00B050;
+	margin-right: 10px;
+	margin-right: 28px;
+}
+
+.location__form-search button {
+	width: 10%;
+	background: #FCD5B5;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+/* Форма обмена товарами, услугами, активами */
+
+.exchange {
+	margin-top: 35px;
+}
+.exchange__top {
+	display: flex;
+}
+.exchange__main-left-main-text, 
+.exchange__main-right-main-text {
+	width: 45%;
+	line-height: 1.2em;
+
+}
+.exchange__main {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid #8EB4E3;
+	background: #F7F7F7;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+.exchange__main-left,
+.exchange__main-right {
+	border: 2px solid #B6A6C9;
+	width: 50%;
+	padding: 10px 20px 0 5px;
+}
+.exchange__main-left-top,
+.exchange__main-right-top {
+	display: flex;
+	width: 80%;
+	align-items: center;
+	margin-top: -5px;
+}
+.exchange__main-left-top-purple,
+.exchange__main-right-top-purple {
+	display: block;
+	background: #E6E0EC;
+	font-weight: 700;
+	width: 60%;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	margin-right: 15px;
+
+}
+.exchange__main-left-top-blue,
+.exchange__main-right-top-blue {
+	background: #B7DEE8;
+	font-weight: 700;
+	padding: 0 5px;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 5px;
+}
+.exchange__main-left-main,
+.exchange__main-right-main {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.exchange__main-left-main img,
+.exchange__main-right-main img {
+	display: block;
+	border: 2px solid #B3A2C7;
+	margin-left: auto;
+}
+.exchange__main-left-main-text,
+.exchange__main-right-main-text {
+	font-style: italic;
+}
+.exchange__main-left-bottom,
+.exchange__main-right-bottom {
+	display: flex;
+	justify-content: right;
+	font-weight: 700;
+	margin-top: -8px;
+	margin-bottom: 10px;
+}
+.exchange__main-right {
+	width: 50%;
+}
+.exchange__main-footer-top-left {
+	display: flex;
+}
+.exchange__main-footer-top-left div {
+	margin-right: 10px;
+}
+.exchange__main-footer {
+	width: 100%;
+}
+.exchange__main-footer-top {
+	display: flex;
+	margin-top: 10px;
+}
+.exchange__main-footer-top-left {
+	display: flex;
+}
+.exchange__main-footer-top-left div {
+	display: flex;
+	align-items: center;
+}
+.exchange__main-footer-top-left div > div {
+	background: #8EB4E3;
+	width: 150px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 10px;
+}
+.exchange__main-footer-top-right {
+	border: 2px solid #7F7F7F;
+	text-align: center;
+	padding-top: 5px;
+	width: 200px;
+}
+
+.exchange__main-footer-top-right .red {
+	color: #FF0000;
+	font-weight: 700;
+}
+
+.exchange__main-footer-top-right .italic {
+	font-style: italic;
+}
+
+.exchange__main-footer-bottom {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 10px;
+}
+
+.exchange__main-footer-bottom-btn {
+	border-radius: 5px;
+	background: #D7E4BD;
+	border: 2px solid #5AC57D;
+	width: 200px;
+	text-align: center;	
+	font-size: 12px;
+	margin-right: 10px;
+}
+
+.exchange__main-footer-bottom-btn-wrapper {
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.exchange__main-footer-bottom-btn.btn-orange{
+	background: #FCD5B5;
+	border: 2px solid #EA8838;
+	width: 100%;
+	font-weight: 700;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+/* Адаптив */
+
+@media (max-width: 768px) {
+	.header__nav-link  {
+		display: none;
+	}
+	.header__nav-link_active {
+		display: block;
+		width: 20%;
+	}
+	.filters,
+	.location,
+	.space {
+		display: none;
+	}
+	.space__text {
+		font-size: 18px;
+		text-align: left;
+	}
+}
